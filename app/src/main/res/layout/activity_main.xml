@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.ludoven.touchpull.widget.TouchPullView
+        android:id="@+id/touchPull"
+        android:visibility="visible"
+        app:pContentDrawable="@drawable/ic_draw_circle"
+        app:pContentDrawableMargin="2dp"
+        app:pDragHeight="120dp"
+        app:pColor="@color/teal_700"
+        app:pRadius="20dp"
+        app:pTangentAngle="110"
+        app:pTargetGravityHeight="4dp"
+        app:pTargetWidth="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.ludoven.touchpull.widget.BezierView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
